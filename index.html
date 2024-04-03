@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <title>主页</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <script>
+    window.onload = function () {
+      var odiv2 = document.getElementById('div2');
+      var ali = odiv2.getElementsByTagName('li');
+      var aspeed = -5;
+      var timer = null;
+      odiv2.innerHTML += odiv2.innerHTML;
+      odiv2.style.width = ali[0].offsetWidth * ali.length + 'px';
+      odiv2.onmouseover = function () { clearInterval(timer); };
+      function a() {
+        timer = setInterval(function () {
+          odiv2.style.left = odiv2.offsetLeft + aspeed + 'px';
+          if (odiv2.offsetLeft < -odiv2.offsetWidth / 2) {
+            odiv2.style.left = '0px';
+          }
+        }, 30);
+      };
+      odiv2.onmouseout = a;
+      a();
+    }
+  </script>
+</head>
+
+<body>
+
+  <div id='div1'>
+    <div id='div2'>
+      <li><a href="https://y.qq.com/n/yqq/singer/0025NhlN2yWrP4.html?ADTAG=baidualdhsy"><img src="img/zhoujiel.jpg"
+            width="500" height="400" /></a></li>
+      <li><a href="https://y.qq.com/n/yqq/singer/002J4UUk29y8BY.html?ADTAG=baiduald"><img src="img/xuezhiqian.jpg"
+            width="500" height="400" /></a></li>
+      <li><a href="https://y.qq.com/n/yqq/singer/001BLpXF2DyJe2.html?ADTAG=baiduald"><img src="img/linjunjie.jpg"
+            width="500" height="400" /></a></li>
+      <li><a href="https://y.qq.com/n/yqq/singer/000GDDuQ3sGQiT.html?ADTAG=baiduald"><img src="img/wangfei.jpg"
+            width="500" height="400" /></a></li>
+    </div>
+  </div>
+
+  <div id='div4'>
+    <form action="" method="get">
+      <div id="kuan"><input name="" type="text" /></div><!--搜索框-->
+      <div id="an"><input name="" type="button" value="搜索" /></div><!--搜索按钮-->
+    </form>
+    <p><a href="login.html">登录</a></p>
+  </div>
+
+  <div id='div3'>
+    <p>
+      <video width="400" height="400" controls="controls">
+        <source src="video/cong.ogg" type="video/ogg">
+        <source src="video/cong.mp4" type="video/mp4">
+      </video>
+      </br>
+      匆匆那年
+    </p>
+  </div>
+  <div id='div5'>
+    <p>
+      <audio controls="controls">
+        <source src="music/yiwai.ogg" type="audio/ogg">
+        <source src="music/yiwai.mp3" type="audio/mpeg">
+      </audio>
+      薛之谦--意外
+    </p>
+    </br>
+    <p>
+      <audio controls="controls">
+        <source src="music/shanqiu.ogg" type="audio/ogg">
+        <source src="music/shanqiu.mp3" type="audio/mpeg">
+      </audio>
+      李宗盛--山丘
+    </p>
+    </br>
+    <p>
+      <audio controls="controls">
+        <source src="music/w.ogg" type="audio/ogg">
+        <source src="music/w.mp3" type="audio/mpeg">
+      </audio>
+      南征北战-我的天空
+    </p>
+  </div>
+  
+  <div id='div7'>
+    <p>
+      <video width="400" height="400" controls="controls">
+        <source src="video/hello.ogg" type="video/ogg">
+        <source src="video/hello.mp4" type="video/mp4">
+      </video>
+      </br>
+      hello
+    </p>
+  </div>
+  <div id='div8'>音乐</div>
+</body>
+
+</html>

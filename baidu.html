@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <style>
+        #test {
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+        }
+
+        .top {
+            width: 100%;
+            height: 40px;
+        }
+
+        .top li {
+            list-style: none;
+            width: 55px;
+            float: right;
+        }
+
+        .top a {
+            color: black;
+
+        }
+
+        .middle {
+            width: 100%;
+            height: 300px;
+        }
+
+        .baidu_logo {
+            width: 300px;
+            height: 150px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .search {
+            width: 640px;
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .text_input {
+            width: 500px;
+            height: 30px;
+            float: left;
+
+        }
+
+        .button_input {
+            width: 100px;
+            height: 36px;
+            float: left;
+
+        }
+
+        .font_jiacu {
+            font-weight: bold;
+        }
+
+        .more {
+            width: 90px !important;
+            height: 30px !important;
+            texxt-align: center;
+            line-height: 30px;
+            background-color: cornflowerblue;
+            margin-top: -5px;
+        }
+
+        .photo {
+            background: url("img/bg.png")no-repeat;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            left: 480px;
+            top: 10px;
+        }
+
+        .photo_jia {
+            background: url("img/fileupload.png")no-repeat;
+            display: none;
+            width: 640px;
+            height: 450px;
+            position: relative;
+            z-index: 300;
+            top: -20px;
+
+        }
+
+        .bottom {
+            width: 640px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .bottom_left {
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+
+        .bottom_right {
+            width: 50%;
+            height: 1000px;
+            float: left;
+        }
+
+        .bottom_left_left {
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+
+        .bottom_left_right {
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+
+        .left_text {
+            width: 40%;
+            font-size: 10px;
+            ;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .bottom_right a {
+            font-size: 10px;
+            color: darkgrey;
+        }
+
+        .bottom_right p {
+            font-size: 10px;
+            color: darkgrey;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function photoxianshi() {
+            document.getElementById("photo").style.backgroundPosition = "0 -20px";
+        }
+        function photoxisoshi() {
+            document.getElementById("photo").style.backgroundPosition = "0 0";
+        }
+        function photojiayicang() {
+            document.getElementById("photo_jia").style.display = "none";
+        }
+        function photojiaxianshi() {
+            document.getElementById("photo_jia").style.display = "block";
+        }
+        function showmore() {
+            document.getElementById("more_product").style.display = "block";
+        }
+        function unshowmore() {
+            document.getElementById("more_product").style.display = "none";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <!--盒子  -->
+    <div id="test">
+        <!--头部  开始-->
+        <div class="top">
+            <ul>
+                <li><a class="font_jiacu" href="###">设置</a></li>
+                <li><a class="font_jiacu" href="###">学术</a></li>
+                <li><a class="font_jiacu" href="###">贴吧</a></li>
+                <li><a class="font_jiacu"
+                        href="file:///C:/Users/Administrator.WTAR7HBYDLJETZC/Desktop/%E5%A4%A7%E4%BD%9C%E4%B8%9A/%E4%B8%BB%E9%A1%B5.html">音乐</a>
+                </li>
+                <li><a class="font_jiacu" href="###">视频</a></li>
+                <li><a class="font_jiacu" href="###">地图</a></li>
+                <li><a class="font_jiacu" href="###">新闻</a></li>
+            </ul>
+        </div>
+        <!--中间部分开始-->
+        <div class="middle">
+            <!--百度logo开始-->
+            <div class="baidu_logo">
+                <!--图片-->
+                <img src="img/bd_logo1.png" width="300" height="150" />
+            </div>
+            <!--百度logo结束-->
+
+            <!---搜索框开始--->
+            <div class="search">
+                <input class="text_input" type="text" />
+                <input class="button_input" type="button" value="百度一下" />
+                <div class="photo" id="photo" onmousemove="photoxianshi()" onmouseout="photoyicang()"
+                    onclick="photojiaxianshi()"></div>
+                <div class="photo_jia" id="photo_jia" onclick="photojiayicang()"></div>
+            </div>
+            <!---搜索框结束--->
+
+        </div>
+        <!--中间部分 结束-->
+        <!--底部  开始-->
+        <div class="bottom">
+            <div class="bottom_left">
+                <div class="bottom_left_left">
+                    <div style="float: left"><img src="img/e1.png" /></div>
+                    <div class="left_text">
+                        <P><b>手机百度</b></P>
+                        <P>快人一步</P>
+                    </div>
+                </div>
+                <div class="bottom_left_right">
+                    <div style="float: left"><img src="img/e2.png" /></div>
+                    <div class="left_text">
+                        <p><b>百度糯米</b></p>
+                        <p>一元抢购</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_right">
+                <p>
+                    <a href="#">把百度设为首页</a>
+                    <a>&nbsp</a>
+                    <a href="#">关于百度</a>
+                    <a>&nbsp</a>
+                    <a href="#">Aboutbaidu</a>
+                    <a>&nbsp</a>
+                    <a href="#">百度推广</a>
+                <P style="margin-top: 8px">
+                    &copy;Baidu<a href="#">使用前必读</a>
+                    <a href="#">意见反馈</a>京ICP0236225
+                <p style="margin-top: 8px">京公网备案11000002000001号
+                </p>
+            </div>
+            <!--底部  结束-->
+        </div>
+</body>
+<html>

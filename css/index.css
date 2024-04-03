@@ -1,0 +1,23 @@
+#div1 
+   {position:relative;width:800px;height:210px;overflow:hidden;   }
+
+#div2{position:absolute; text-align:center}
+  li{float:left;list-style-type:none;padding:5px; }
+  img{border:none;  }
+
+#div2 li a:hover{top:-10px;}
+  a{position:relative; }
+
+#div3{ background-color:white;background:url("img/xiao.jpg")no-repeat; height:415px; width:400px; float:left;}
+
+#div4{background-color:white; background:url(" img/dong.jpg")no-repeat; top:0; right:0; height:220px; width:500px; position:absolute; text-align:right;}
+
+#div5{background-color:grey; background:url("img/xiao.jpg")no-repeat; height:400px; width:841px}
+   
+#div7{background-color:white; background:url("img/xiao.jpg")no-repeat;height:400px; width:500; top:220; right:0; position:absolute}
+
+#div8{background-color:#778899; color:white; text-align:center; clean:both; padding:20px;
+
+#kuan input{ width:360px; height:100px; border:none; float:left}
+
+#an input{ width:120px; height:80px;   border:none;  float:left}
